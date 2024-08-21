@@ -1,7 +1,3 @@
-The project focuses on creating a remote-controlled firefighting robot designed to improve safety and operational 
-efficiency in extreme hazard environments. Traditional firefighting methods often expose personnel to significant 
-risks, particularly in scenarios with high temperatures, toxic gases, or unstable structures. This robot, equipped 
-with advanced sensors and cameras, can navigate dangerous areas, assess fire conditions, and deploy firefighting 
-measures without direct human intervention. By remotely controlling the robot, operators can tackle fires from a safe 
-distance, reducing the potential for injury and enabling more precise firefighting in challenging environments. This 
-innovation aims to revolutionize emergency response in hazardous settings.
+# **The problem statement is:**
+
+Development of a fire-fighting robot designed to minimize the risk to human firefighters by manually navigating hazardous environments, thereby enhancing the safety and effectiveness of rescue operations in life-threatening situations.
