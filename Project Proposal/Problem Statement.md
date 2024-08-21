@@ -1,6 +1,3 @@
 **Problem Statement:**
 
-The project focuses on creating a remote-controlled firefighting robot designed to improve safety and efficiency in 
-dangerous environments. By remotely navigating the robot equipped with fire suppression tools and sensors, human 
-exposure to life-threatening conditions is minimized, allowing for safer, faster, and more effective fire mitigation 
-in extreme hazard zones.
+The project aims to develop a firefighting robot designed to minimize the risk to firefighters by remotely assisting in rescue operations. Equipped with advanced navigation systems, the robot will enhance safety and efficiency, reducing the need for firefighters to enter life-threatening situations while rescuing trapped individuals.
