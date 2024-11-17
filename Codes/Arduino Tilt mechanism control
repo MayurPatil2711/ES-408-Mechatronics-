@@ -1,0 +1,41 @@
+#include <Stepper.h>
+
+// Define the number of steps per revolution for your stepper motor
+const int stepsPerRevolution = 200; 
+
+// Initialize the stepper library on pins 8 through 11:
+Stepper myStepper(stepsPerRevolution, 8, 10, 9, 11);
+
+void setup() {
+  // Start the hardware serial communication
+  Serial.begin(9600);
+
+  // Set the speed of the stepper motor
+  myStepper.setSpeed(60); // Speed in RPM
+
+  Serial.println("Waiting for Bluetooth command...");
+}
+
+void loop() {
+  // Check if Bluetooth has sent any data
+  if (Serial.available()) {
+    char command = Serial.read(); // Read the incoming command
+    Serial.print("Received Command: ");
+    Serial.println(command);
+
+    // Command to rotate stepper motor clockwise
+    if (command == 'C') {
+      Serial.println("Rotating Clockwise");
+      myStepper.step(stepsPerRevolution); // Move one revolution clockwise
+    }
+    // Command to rotate stepper motor counterclockwise
+    else if (command == 'A') {
+      Serial.println("Rotating Counterclockwise");
+      myStepper.step(-stepsPerRevolution); // Move one revolution counterclockwise
+    }
+    // Stop or unknown command
+    else {
+      Serial.println("Unknown Command");
+    }
+  }
+}
